@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /fe2/Experiencia4/CRUD-CodeIgniter-Node-master/CodeIgniter
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php/$1 [L]
+  ErrorDocument 404 index.php
